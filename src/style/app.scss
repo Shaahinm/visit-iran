@@ -1,0 +1,14 @@
+// body {
+//     background: url('./../images/item.png') center center no-repeat;
+//     background-color: whitesmoke;
+//     p {
+//         color: red;
+//     }
+// }
+
+@charset 'utf-8';
+
+@import "abstract/__abstract-dir.scss";
+@import "base/__base-dir.scss";
+@import "component/__component-dir.scss";
+@import "layout/__layout-dir.scss";
