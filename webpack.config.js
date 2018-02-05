@@ -93,6 +93,16 @@ module.exports = {
       filename: "pages/index.html",
       template: "./src/templates/index/index.pug"
     }),
+    new HtmlWebpackPlugin({
+      title: "DESTINATIONS",
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      excludeChunks: ["ltr"],
+      filename: "pages/destinations.html",
+      template: "./src/templates/destinations/destinations.pug"
+    }),
     // new HtmlWebpackPlugin({
     //   title: "Contact",
     //   hash: true,

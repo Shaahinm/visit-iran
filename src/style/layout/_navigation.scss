@@ -1,15 +1,7 @@
-@font-face {
-  font-family: "Yekan";
-  src: url("./../fonts/yekan.eot");
-  src: url("./../fonts/yekan.eot?#iefix") format("embedded-opentype"),
-    url("./../fonts/yekan.woff") format("woff"),
-    url("./../fonts/yekan.ttf") format("truetype"),
-    url("./../fonts/Yekan.svg#yekan") format("svg");
-  font-weight: bold;
-  font-style: normal;
+header {
+  display: none;
 }
-
-@include for-size(desktop-up) {
+@include for-size(tablet-portrait-up) {
   header {
     font-family: "Yekan";
     display: flex;
@@ -75,7 +67,7 @@
       }
       .buttom {
         height: 50%;
-        display: flex;        
+        display: flex;
         flex-direction: row;
         align-items: center;
         ul {
@@ -90,31 +82,72 @@
         .dropdown {
           position: relative;
           display: inline-block;
+          i {
+            color: $main;
+            position: relative;
+            bottom: -5px;
+            right: 10px;
+          }
           .dropdown-btn {
             border: none;
             background: $white;
-            color: black;
+            color: $menu-black;
             font-size: 15px;
-            font-family: 'Yekan'
+            font-family: "Yekan";
+            padding: 0 20px;
           }
-  
+
           .dropdown-content {
             display: none;
             position: absolute;
             background-color: $white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 200px;
+            max-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             a {
-              color: black;
+              color: $menu-black;
               padding: 12px 16px;
               text-decoration: none;
               display: block;
+              &:hover {
+                color: $main;
+                background-color: #f1f1f1;
+              }
+            }
+
+            &.map {
+              min-width: 500px;
+              width: 500px;
+              .map-menu-wrapper {
+                background-color: $main;
+                display: flex;
+                padding: 30px 20px;
+                flex-direction: row;
+                .right {
+                  flex: 1;
+                }
+                .left {
+                  flex: 2;
+                  svg path:hover {
+                    fill: red !important;
+                  }
+                  svg path {
+                    fill: white !important;
+                  }
+                  svg path.iran {
+                    fill: black !important;
+                  }
+                  svg g.border {
+                    fill: aqua;
+                  }
+                }
+              }
             }
           }
-  
+
           &:hover .dropdown-btn {
-            background-color: red;
+            color: $main;
           }
 
           &:hover .dropdown-content {
@@ -122,6 +155,8 @@
           }
         }
       }
-    }
+    }    
   }
 }
+
+

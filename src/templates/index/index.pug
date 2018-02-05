@@ -1,7 +1,69 @@
 extends ./../../layout.pug
 
 block content   
-    p this has changes from inside the index page
-    img(src="./../../images/item.png", alt="")
-    input(type="text")
-    input(type="button", value="Shaahin", class="btn alt")
+    .content.destinations        
+        //- img(src="./../../images/item.png", alt="")
+        .hero.destinations
+            .hero-text 
+                a(href="#") مقاصد گردشگری                
+        .main
+            .timeline-sidebar 
+                ul
+                    li
+                        p 
+                            a(href="#world") اثار جهانی                        
+                    li
+                        p 
+                            a(href="#") آثار تاریخی 
+                    li
+                        p 
+                            a(href="#") آثار طبیعی
+                    li
+                        p 
+                            a(href="#") روستاهای هدف گردشگری 
+                    li
+                        p 
+                            a(href="#") مناطق آزاد                                               
+            .timeline-main 
+                .timeline
+                    .timeline__block                        
+                        .timeline__content
+                            h3.timeline__headline 
+                            img(src="https://picsum.photos/800/600/?random", alt="", class="destination-image", height="300px" width="100%")
+                            p                            
+                        .timeline__info
+                            p.timeline__date تهران
+                    .timeline__block                        
+                        .timeline__content
+                            h3.timeline__headline با سرفصل
+                            img(src="https://picsum.photos/800/600/?random", alt="", class="destination-image", height="300px" width="100%")
+                            p
+                        .timeline__info
+                            p.timeline__date
+                    .timeline__block                        
+                        .timeline__content
+                            h3.timeline__headline
+                            img(src="https://picsum.photos/800/600/?random", alt="", class="destination-image", height="300px" width="100%")
+                            p 
+                        .timeline__info
+                            p.timeline__date برای استفاده تاریخ، یا ...                            
+                    .timeline__block                        
+                        .timeline__content#world                        
+                            h3.timeline__headline
+                            img(src="https://picsum.photos/800/600/?random", alt="", class="destination-image", height="300px" width="100%")
+                            p با توضیحات، برای به هم نریختن ساختار، لطفا تگ هارو خالی نگاه دارید
+                        .timeline__info
+                            p.timeline__date اصفهان
+                    .timeline__block                        
+                        .timeline__content
+                            h3.timeline__headline تست
+                            img(src="https://picsum.photos/800/600/?random", alt="", class="destination-image", height="300px" width="100%")
+                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی 
+                        .timeline__info
+                            p.timeline__date شبه، ۲۶ فروردین
+
+
+                                
+
+
+            

@@ -1,3 +1,13 @@
-body{
-    direction: rtl;
+body {
+  direction: ltr;
+}
+
+.primary-menu-wrapper {
+  .buttom {
+    .dropdown {
+      i {
+        left: 10;
+      }
+    }
+  }
 }
