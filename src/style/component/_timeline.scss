@@ -63,15 +63,9 @@
           order: -1;
         }
       }
-
-      .timeline__info {
-      }
     }
 
     &:nth-child(even) {
-      .timeline__content {
-      }
-
       .timeline__info {
         @include for-size(tablet-portrait-up) {
           order: -1;

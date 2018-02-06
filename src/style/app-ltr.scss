@@ -2,12 +2,52 @@ body {
   direction: ltr;
 }
 
-.primary-menu-wrapper {
-  .buttom {
-    .dropdown {
-      i {
-        left: 10;
-      }
+@media (min-width: 900px) {
+  header {
+    .primary-menu-wrapper .top .container .left .dropdown .dropdown-content {
+      right: 0;
+      left: auto;
     }
+    .primary-menu-wrapper .top .container .left .dropdown i {
+      right: -5px;
+    }
+    .primary-menu-wrapper .top a {
+      border: 0;
+      border-right: 1px solid white;
+    }
+
+    .primary-menu-wrapper .top a {
+      border: 0;
+      border-right: 1px solid white;
+    }
+  }
+
+  .hero .hero-text {
+    left: auto;
+    right: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timeline-sidebar ul li p:nth-child(1) {
+    border: 0;
+    border-left: 2px solid #f5422e;
+  }
+
+  .timeline-sidebar ul li p:nth-child(1):after {
+    content: none;
+  }
+
+  .timeline-sidebar ul li p:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -9px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: #f5422e;
   }
 }

@@ -491,6 +491,9 @@
             a {
               border: none;
               padding: 0 15px;
+              &:hover {
+                color: $main;
+              }
             }
           }
           .left {

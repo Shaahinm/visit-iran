@@ -1,0 +1,1 @@
+@font-face{font-family:Yekan;src:url(./../fonts/yekan.eot);src:url(./../fonts/yekan.eot) format("embedded-opentype"),url(./../fonts/yekan.woff) format("woff"),url(./../fonts/yekan.ttf) format("truetype"),url(./../fonts/Yekan.svg)
