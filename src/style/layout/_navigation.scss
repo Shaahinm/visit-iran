@@ -87,8 +87,13 @@
     }
 
     .logo-wrapper {
-      z-index: 4;
-    }
+      z-index: 4;      
+      img {
+        width: 124px;
+        height: 130px;
+        object-fit: cover;
+      }
+    }   
 
     input:checked ~ nav {
       height: 100%;
@@ -301,6 +306,11 @@
 
     .logo-wrapper {
       z-index: 4;
+      img {
+        width: 124px;
+        height: 130px;
+        object-fit: cover;
+      }
     }
 
     input:checked ~ nav {
@@ -448,6 +458,17 @@
     }
     .logo-wrapper {
       position: static;
+      .logo {
+        /// new
+        width: 250px;
+        height: 100px;
+        background: url(../images/logo.png) center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content: center;
+  
+      //delete up to heree
+      }
     }
     .primary-menu-wrapper {
       font-size: 16px;
