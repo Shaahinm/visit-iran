@@ -9,7 +9,7 @@
     top: 0;
     left: 28px;
     height: 100%;
-    width: 4px;
+    width: 2px;
     background: $main;
     @media (max-width: 599px) {
       left: 75px;
@@ -134,22 +134,22 @@
         left: 0;
         margin-left: 19px;
         @media (max-width: 599px) {
-          left: 48px;
+          left: 46px;
           top: 100px;
         }
         @include for-size(tablet-portrait-up) {
           left: 50%;
-          margin-left: -11px;
+          margin-left: -12px;
           top: 170px;
         }
         @include for-size(desktop-up) {
           left: 50%;
-          margin-left: -11px;
+          margin-left: -12px;
           top: 150px;
         }
         @include for-size(big-desktop-up) {
           left: 50%;
-          margin-left: -11px;
+          margin-left: -12px;
           top: 170px;
         }
       }
@@ -287,12 +287,12 @@
             color: $main;
             flex: 1;
             font-size: 16px;
-            border-right: 4px solid $main;
+            border-right: 2px solid $main;
             &:after {
               content: "";
               position: absolute;
               top: 20px;
-              right: -10px;
+              right: -9px;
               display: block;
               width: 10px;
               height: 10px;

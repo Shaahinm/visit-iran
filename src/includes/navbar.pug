@@ -1,9 +1,4 @@
-header
-    //- input(type="checkbox", id="burger")
-    //- label(for="burger")
-    //-     span
-    //-     span
-    //-     span
+header    
     div.logo-wrapper
         //- img(src="./../../images/fa_logo.png", alt="")
         img(src="http://via.placeholder.com/124x130", alt="")
@@ -24,6 +19,9 @@ header
                     ul
                         li
                             a(href="#") 
+                                i.fa.fa-cloud
+                        li
+                            a(href="#") 
                                 i.fa.fa-search
                         li
                             a(href="#") 
@@ -31,8 +29,19 @@ header
                         li
                             a(href="#") ثبت نام                    
                         li
-                            a(href="#") فارسی
-
+                            .dropdown
+                                button(type='button' class='dropdown-btn') زبان                                    
+                                    i.fa.fa-caret-down
+                                .dropdown-content
+                                    a(href="#") انگلیسی
+                                    a(href="#") فارسی 
+                                    a(href="#") فارسی 
+                                    a(href="#") فارسی 
+        input(type="checkbox", id="burger")
+        label(for="burger")
+            span
+            span
+            span
         nav.buttom             
             ul
                 li
@@ -51,11 +60,13 @@ header
                                     
                 li                
                     .dropdown
-                        button(type='button' class='dropdown-btn') مسیرهای گردشگری                            
+                        a(href="http://google.com")
+                            button(type='button' class='dropdown-btn') مسیرهای گردشگری                            
                 li
                     .dropdown
-                        button(type='button' class='dropdown-btn') مراکز اقامتی
-                            i.fa.fa-caret-down
+                        a(href="google.com")
+                            button(type='button' class='dropdown-btn') مراکز اقامتی                            
+                                i.fa.fa-caret-down
                         .dropdown-content
                             a(href="#") اقامتهای بوم گردی
                             a(href="#") هتل ها                            
