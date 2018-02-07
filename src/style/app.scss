@@ -34,6 +34,7 @@ a {
     }
     @include for-size(desktop-up) {
       padding: 0 124px;
+      padding-top: 60px;
       .main {
         display: flex;
         flex-direction: row;        

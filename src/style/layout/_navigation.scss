@@ -1,5 +1,5 @@
 @media (max-width: 320px) {
-  header .primary-menu-wrapper .top .left ul li:nth-child(2){
+  header .primary-menu-wrapper .top .left ul li:nth-child(2) {
     display: none;
   }
 }
@@ -125,9 +125,18 @@ header {
         height: 20px;
         position: fixed;
         top: 0;
-        right: 95px;
+        right: 96px;
         z-index: 10px;
         background: $accent;
+      }
+      .top-mobile-underline {
+        width: 80%;
+        height: 1px;
+        position: fixed;
+        top: 65px;
+        right: 96px;
+        z-index: 11px;
+        background: rgba(0, 0, 0, 0.1);
       }
       .middle {
         display: none;
@@ -180,7 +189,7 @@ header {
         border: none;
         background: $white;
         color: $black;
-        font-size: 13px;        
+        font-size: 13px;
       }
 
       .dropdown-content {
@@ -284,19 +293,22 @@ header {
     .top-filler {
       display: none;
     }
+    .top-mobile-underline {
+      display: none;
+    }
     height: 130px;
     label {
       display: none;
     }
     .logo-wrapper {
-      position: static;      
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      position: static;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       height: 129px;
       img {
         width: 124px;
-        height: 130px;
-        object-fit: cover;
-      }      
+        height: 129px;
+        object-fit: cover;        
+      }    
     }
     .primary-menu-wrapper {
       font-size: 16px;
@@ -314,7 +326,7 @@ header {
         z-index: 4;
         position: static;
         a {
-          color: $accent-fc;          
+          color: $accent-fc;
           border-left: 1px solid white;
           padding: 0 20px;
           &:hover {
@@ -337,7 +349,7 @@ header {
             flex: 1;
             font-size: 19px;
             a {
-              border: none;                            
+              border: none;
             }
           }
           .left {
@@ -346,7 +358,7 @@ header {
             justify-content: flex-end;
             position: static;
             flex: 1;
-            ul {              
+            ul {
               li {
                 display: inline;
                 border: 0;
@@ -356,32 +368,32 @@ header {
                 }
               }
             }
-            .dropdown {              
-              i {                
-                bottom: -5px;                
+            .dropdown {
+              i {
+                bottom: -5px;
               }
-              .dropdown-btn {                
+              .dropdown-btn {
                 background: $accent;
                 color: $accent-fc;
-                font-size: 13px;                
+                font-size: 13px;
                 padding: 0 20px;
               }
 
-              .dropdown-content {                
+              .dropdown-content {
                 background-color: $accent;
                 text-align: left;
                 left: 0;
                 box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.2);
                 z-index: 10;
                 a {
-                  color: $accent-fc;                  
+                  color: $accent-fc;
                   display: block;
                   border: 0;
                   &:hover {
-                    color: $main;                    
+                    color: $main;
                   }
                 }
-              }             
+              }
             }
           }
         }
@@ -392,7 +404,20 @@ header {
         flex-direction: row;
         background-color: transparent;
         position: static;
+        // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        outline:1px solid rgba(0, 0, 0, 0.1);
+        // border-right: 1px solid rgba(0, 0, 0, 0.1);
         align-items: center;
+        // &:before {
+        //   content: "";
+        //   display: block;
+        //   position: absolute;
+        //   top: 0;
+        //   right: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   border: 1px solid red;
+        // }
         ul {
           position: static;
           li {
@@ -417,7 +442,7 @@ header {
             border: none;
             background: $white;
             color: $black;
-            font-size: 15px;            
+            font-size: 15px;
             padding: 0 20px;
           }
 
@@ -431,7 +456,7 @@ header {
             z-index: 1;
             a {
               color: $menu-black;
-              padding: 12px 16px;              
+              padding: 12px 16px;
               display: block;
               &:hover {
                 color: $main;
