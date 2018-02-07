@@ -1,3 +1,5 @@
+@import "./base/_color.scss";
+
 body {
   direction: ltr;
 }
@@ -15,12 +17,12 @@ body {
 
     .primary-menu-wrapper .top .left ul li:nth-child(2) {
       border: 0;
-      border-left: 1px solid #7d7b7b;
-      border-right: 1px solid #7d7b7b;
+      border-left: 1px solid $menu-black;
+      border-right: 1px solid $menu-black;
     }
     .primary-menu-wrapper .top .left ul li {
       border: 0;
-      border-right: 1px solid #7d7b7b;
+      border-right: 1px solid $menu-black;
     }
   }
 }
@@ -38,12 +40,12 @@ body {
 
     .primary-menu-wrapper .top .left ul li:nth-child(2) {
       border: 0;
-      border-left: 1px solid #7d7b7b;
-      border-right: 1px solid #7d7b7b;
+      border-left: 1px solid $menu-black;
+      border-right: 1px solid $menu-black;
     }
     .primary-menu-wrapper .top .left ul li {
       border: 0;
-      border-right: 1px solid #7d7b7b;
+      border-right: 1px solid $menu-black;
     }
   }
 }
@@ -59,12 +61,12 @@ body {
     }
     .primary-menu-wrapper .top a {
       border: 0;
-      border-right: 1px solid white;
+      border-right: 1px solid $white;
     }
 
     .primary-menu-wrapper .top a {
       border: 0;
-      border-right: 1px solid white;
+      border-right: 1px solid $white;
     }
     input + label {
       left: auto;
@@ -85,7 +87,7 @@ body {
 @media (min-width: 1200px) {
   .timeline-sidebar ul li p:nth-child(1) {
     border: 0;
-    border-left: 2px solid #f5422e;
+    border-left: 2px solid $main;
   }
 
   .timeline-sidebar ul li p:nth-child(1):after {
@@ -100,8 +102,8 @@ body {
     display: block;
     width: 10px;
     height: 10px;
-    border: 3px solid white;
+    border: 3px solid $white;
     border-radius: 50%;
-    background: #f5422e;
+    background: $main;
   }
 }

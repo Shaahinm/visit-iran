@@ -1,14 +1,46 @@
-// @include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, $file-formats: ttf);
-// @include font-face("Open Sans", "../fonts/open-sans/OpenSans-Regular", normal, italic, $file-formats: ttf);
-// @include font-face(Yekan, "./../../fonts/yekan");
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/IRANSans_Bold.ttf') format('truetype');
+}
 
 @font-face {
-    font-family: "Yekan";
-    src: url("./../fonts/yekan.eot");
-    src: url("./../fonts/yekan.eot?#iefix") format("embedded-opentype"),
-      url("./../fonts/yekan.woff") format("woff"),
-      url("./../fonts/yekan.ttf") format("truetype"),
-      url("./../fonts/Yekan.svg#yekan") format("svg");
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/IRANSans_Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/IRANSans_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/IRANSans_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSans.ttf') format('truetype');
+}
+
+
+// @font-face {
+//     font-family: "Yekan";
+//     src: url("./../fonts/yekan.eot");
+//     src: url("./../fonts/yekan.eot?#iefix") format("embedded-opentype"),
+//       url("./../fonts/yekan.woff") format("woff"),
+//       url("./../fonts/yekan.ttf") format("truetype"),
+//       url("./../fonts/Yekan.svg#yekan") format("svg");
+//     font-weight: bold;
+//     font-style: normal;
+//   }

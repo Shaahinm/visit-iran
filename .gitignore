@@ -13,3 +13,7 @@ npm-debug.log*
 New Text Document.txt
 testing/test.html
 testing/ir.svg
+dist.zip
+webpack.config - before changes.js
+testing/*
+

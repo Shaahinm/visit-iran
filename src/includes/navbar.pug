@@ -1,9 +1,10 @@
 header    
     div.logo-wrapper
-        //- img(src="./../../images/logo.png", alt="")
+        //- img(src="./../../images/logo.png", alt="")        
         img(src="http://via.placeholder.com/124x130", alt="")        
     div.primary-menu-wrapper
         .top
+            .top-filler
             .container
                 .right
                     a(href="#") درباره ایران
@@ -34,9 +35,7 @@ header
                                     i.fa.fa-caret-down
                                 .dropdown-content
                                     a(href="#") انگلیسی
-                                    a(href="#") فارسی 
-                                    a(href="#") فارسی 
-                                    a(href="#") فارسی 
+                                    a(href="#") فارسی                                     
         input(type="checkbox", id="burger")
         label(for="burger")
             span
@@ -53,6 +52,7 @@ header
                                 .right
                                     h1 salam
                                 .left
+                                    h2 salam
                                     //- img(src="http://kasbban.ir/assets/images/iranmap.svg", alt="")
                                     //- img(src="https://upload.wikimedia.org/wikipedia/en/e/e5/My_Little_Pony_Friendship_is_Magic_logo.svg", alt="")
                                     
@@ -64,7 +64,7 @@ header
                             button(type='button' class='dropdown-btn') مسیرهای گردشگری                            
                 li
                     .dropdown
-                        a(href="google.com")
+                        a(href="javascript:void(0)")
                             button(type='button' class='dropdown-btn') مراکز اقامتی                            
                                 i.fa.fa-caret-down
                         .dropdown-content

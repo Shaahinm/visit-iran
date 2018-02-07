@@ -51,12 +51,5 @@ a {
   }
 }
 
-@include for-size(desktop-up) {
-  .content {
-    &.destinations {
-    }
-  }
-}
-
 
 // @import "./app-ltr.scss";
