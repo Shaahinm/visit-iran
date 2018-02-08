@@ -26,21 +26,24 @@ a {
     .main {
       display: block;
       margin-top: 40px;
-        margin-bottom: 40px;    
-        .timeline-sidebar {
-          padding-right: 20px;
-          margin-bottom: 20px;
-        }
+      margin-bottom: 40px;
+      .timeline-sidebar {
+        padding-right: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    @include for-size(tablet-landscape-up) {
+      margin-top: 130px;
     }
     @include for-size(desktop-up) {
       padding: 0 124px;
-      padding-top: 60px;
+      margin-top: 130px;
       .main {
         display: flex;
-        flex-direction: row;        
+        flex-direction: row;
         .timeline-sidebar {
           display: block;
-          flex: 1;
+          flex: 0 0 230px;
           padding-right: 0;
           margin-bottom: 0;
         }
@@ -50,6 +53,42 @@ a {
       }
     }
   }
+}
+
+
+.carousel {
+  .owl-nav {
+    div {
+      position: absolute;
+      top: 50%;
+      background-color: #000;
+      color: #fff;
+      margin: 0; transition: all 0.3s ease-in-out;
+      &.owl-prev {
+        left: 0;
+      }
+      &.owl-next {
+        right: 0;
+      }
+    }
+  }
+  
+  .owl-dots {
+        text-align: center; 
+        padding-top: 15px;
+        div {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #ccc;
+            margin: 0 3px;
+
+            &.active {
+                background-color: #000;
+            }
+        }
+    }
 }
 
 

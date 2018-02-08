@@ -74,6 +74,10 @@ module.exports = {
     open: true
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
       title: "LAYOUT",
       minify: {

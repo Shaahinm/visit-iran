@@ -106,7 +106,8 @@ header {
     position: fixed;
     right: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 80px;
+    height: 79px;
+    background: $white;
     img {
       width: 80px;
       height: 80px;
@@ -116,9 +117,9 @@ header {
 
   .primary-menu-wrapper {
     .top {
-      position: fixed;
+      position: fixed;      
       top: 90px;
-      right: 130px;
+      right: 130px;      
       z-index: 4;
       .top-filler {
         width: 100vw;
@@ -180,7 +181,7 @@ header {
       position: relative;
       display: inline-block;
       i {
-        color: $main;
+        // color: $main;
         position: relative;
         bottom: -3px;
         right: 1px;
@@ -249,7 +250,7 @@ header {
       .top {
         .container .middle {
           display: block;
-          position: fixed;
+          position: fixed;          
           top: 1px;
           right: 50%;
           a {
@@ -282,6 +283,7 @@ header {
   }
 }
 
+
 @media screen and (max-width: 1199px) and (min-width: 900px) {
   header .primary-menu-wrapper .top .container .middle {
     display: none !important;
@@ -290,6 +292,11 @@ header {
 
 @include for-size(tablet-landscape-up) {
   header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
     .top-filler {
       display: none;
     }
@@ -307,8 +314,8 @@ header {
       img {
         width: 124px;
         height: 129px;
-        object-fit: cover;        
-      }    
+        object-fit: cover;
+      }
     }
     .primary-menu-wrapper {
       font-size: 16px;
@@ -318,6 +325,7 @@ header {
       .top {
         height: 50%;
         display: flex;
+        padding-left: 100px;
         justify-content: center;
         flex-direction: row;
         align-items: center;
@@ -402,26 +410,17 @@ header {
         height: 50%;
         display: flex;
         flex-direction: row;
-        background-color: transparent;
-        position: static;
-        // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        outline:1px solid rgba(0, 0, 0, 0.1);
-        // border-right: 1px solid rgba(0, 0, 0, 0.1);
-        align-items: center;
-        // &:before {
-        //   content: "";
-        //   display: block;
-        //   position: absolute;
-        //   top: 0;
-        //   right: 0;
-        //   bottom: 0;
-        //   left: 0;
-        //   border: 1px solid red;
-        // }
+        background-color: $white;
+        position: static;        
+        outline: 1px solid rgba(0, 0, 0, 0.1);        
+        align-items: center;       
         ul {
           position: static;
+          width: 100%;
+          display: flex;
           li {
             display: inline;
+            flex: 1 0;
             opacity: 1;
             a {
               display: inline-block;
@@ -433,10 +432,10 @@ header {
           display: inline-block;
           i {
             display: inline-block;
-            color: $main;
+            color: $black;
             position: relative;
-            bottom: -5px;
-            right: 10px;
+            bottom: -3px;
+            right: 5px;
           }
           .dropdown-btn {
             border: none;
@@ -464,29 +463,52 @@ header {
               }
             }
             &.map {
-              min-width: 500px;
-              width: 500px;
+              min-width: 700px;
+              width: 700px;
               .map-menu-wrapper {
                 background-color: $main;
                 display: flex;
+                height: 400px;
                 padding: 30px 20px;
                 flex-direction: row;
                 .right {
-                  flex: 1;
+                  width: 300px;
+                  table {
+                    margin-top: 10px;
+                    tr {
+                      td {
+                        width: 130px;
+                        padding: 0 5px;
+                      }
+                      &:last-child {
+                        td {
+                          &:last-child {
+                            a {
+                              border: none;
+                            }
+                            display: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  a {
+                    border-bottom: 1px solid $white;
+                    padding: 3px 0;
+                    color: $white;
+                    &:hover {
+                      color: $main;
+                    }
+                  }
                 }
                 .left {
-                  flex: 2;
-                  svg path:hover {
-                    fill: red !important;
-                  }
-                  svg path {
-                    fill: white !important;
-                  }
-                  svg path.iran {
-                    fill: black !important;
-                  }
-                  svg g.border {
-                    fill: aqua;
+                  width: 400px;
+                  margin-right: 30px;
+                  .map-container {
+                    margin-top: 30px;
+                    background: rgba(255, 255, 255, 0.8);
+                    width: 350px;
+                    height: 350px;
                   }
                 }
               }
@@ -502,5 +524,11 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1286px) {
+  header .primary-menu-wrapper .top {
+    padding-left: 0;
   }
 }
